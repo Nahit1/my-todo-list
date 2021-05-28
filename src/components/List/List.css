@@ -1,0 +1,36 @@
+.wrapper .todoList{
+    max-height: 250px;
+  }
+  .todoList .todoList-item{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+  }
+
+  .todoList .todoList-icons{
+    display: flex; 
+    justify-content: flex-end;
+  }
+
+  .todoList .todoList-icons .todoList-icon{
+    padding-right: 5px; 
+    list-style: none;
+  }
+
+  .todoList .todoList-icons .todoList-icon i{
+    color: #ff9f43; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+
+  .todoList .todoList-icons .todoList-icon i:hover{
+    color: #e67e22; 
+  }

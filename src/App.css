@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(to top, #48c6ec, #42b8ec, #4aa8e9, #5b98e2, #6f86d6);
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper{
+    background: #fdcb6e;
+    max-width: 400px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
   }
-}
+
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    color: #0b224e; text-align: center;
+  }
+  .wrapper .inputField{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  .inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+  .inputField input:focus{
+    border-color: #54a0ff;
+  }
+  .inputField button{
+    width: 50px;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    background: #54a0ff;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  .inputField button:hover,
+  .footer button:hover{
+    background: #2e86de;
+  }
+
+  .todoList-item{
+    color: #2e86de;
+  }
+
+  .wrapper .footer{
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #54a0ff;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    float: right;
+  }
